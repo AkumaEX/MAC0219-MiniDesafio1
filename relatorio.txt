@@ -1,0 +1,44 @@
+Nome: JULIO KENJI UEDA NUSP: 9298281
+
+Desafio de Programação: Predição de Branches
+
+1.CÓDIGO
+
+    Linguagem de programação utilizado: C
+    Para executar o programa: $make run
+
+2.MÉTODO UTILIZADO
+
+    O programa executa duas funções (uma onde é possível a predição de branches e outra onde a predição não é trivial),
+    calcula o tempo de execução de cada uma e imprime o resultado na saída.
+
+    Funções 'void def()' e 'void undef()' foram criados com formato e estruturas semelhantes para a execução dos testes,
+    onde ambos executam um laço 'for' com número de repetições 'NTEST', e uma condicional 'if' dentro deste.
+
+    A função 'void def()' possui uma condicional 'if' onde a predição pode ser definida, pois a condicional é sempre
+    verdadeira.
+
+    A função 'void undef()' possui uma condicional onde o resultado não é trivial.
+
+    A função 'void def_time()' calcula o tempo de execução da função 'void def()'.
+
+    A função 'void undef_time()' calcula o tempo de execução da função 'void undef()'.
+
+    A função 'main()' é responsável pela execução do programa.
+
+3.RESULTADO
+
+    Os resultados dos testes são semelhantes.
+    Para um laço de tamanho 1000000000 o resultado é:
+
+    Indef time: 3492264093
+    Def time:   2693762772
+    Indef/ Def Time Ratio: 1.296426
+
+    Onde 'Indef time' é o tempo de execução da função onde a predição de branches não é definida e 'Def time' o tempo de
+    execução da função onde a predição é facilmente definida.
+
+4.CONCLUSÃO
+
+    O uso da predição de branch é importante, pois em casos como o executado pelo programa pode acelerar o sistema em
+    torno de 30%.
